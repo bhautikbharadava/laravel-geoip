@@ -186,17 +186,18 @@ class GeoIP {
 			$record = $this->maxmind->city($ip);
 
 			$location = array(
-				"ip"			=> $ip,
-				"isoCode" 		=> $record->country->isoCode,
-				"country" 		=> $record->country->name,
-				"city" 			=> $record->city->name,
-				"state" 		=> $record->mostSpecificSubdivision->isoCode,
-				"postal_code"   => $record->postal->code,
-				"lat" 			=> $record->location->latitude,
-				"lon" 			=> $record->location->longitude,
-				"timezone" 		=> $record->location->timeZone,
-				"continent"		=> $record->continent->code,
-				"default"       => false,
+				"ip"				=> $ip,
+				"isoCountryCode"	=> $record->country->isoCode,
+				"country" 			=> $record->country->name,
+				"isoStateCode"		=> $record->mostSpecificSubdivision->isoCode,
+				"state" 			=> $record->mostSpecificSubdivision->name,
+				"city" 				=> $record->city->name,
+				"postal_code"   	=> $record->postal->code,
+				"lat" 				=> $record->location->latitude,
+				"long" 				=> $record->location->longitude,
+				"timezone" 			=> $record->location->timeZone,
+				"continent"			=> $record->continent->code,
+				"default"       	=> false,
 			);
 		}
 		catch (AddressNotFoundException $e)
