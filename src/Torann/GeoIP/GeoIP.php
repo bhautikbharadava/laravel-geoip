@@ -63,17 +63,18 @@ class GeoIP {
 	 * @var array
 	 */
 	protected $default_location = array (
-		"ip" 			=> "127.0.0.0",
-		"isoCode" 		=> "US",
-		"country" 		=> "United States",
-		"city" 			=> "New Haven",
-		"state" 		=> "CT",
-		"postal_code"   => "06510",
-		"lat" 			=> 41.31,
-		"lon" 			=> -72.92,
-		"timezone" 		=> "America/New_York",
-		"continent"		=> "NA",
-		"default"       => true,
+		"ip" 				=> "127.0.0.0",
+		"isoCountryCode"	=> "IN",
+		"country" 			=> "India",
+		"isoStateCode"		=> "GJ"
+		"city" 				=> "Ahmedabad",
+		"state" 			=> "Gujarat",
+		"postal_code"   	=> "380015",
+		"lat" 				=> 23.0225,
+		"long" 				=> 72.5714,
+		"timezone" 			=> "Asia/Kolkata",
+		"continent"			=> "NA",
+		"default"       	=> true,
 	);
 
 	/**
