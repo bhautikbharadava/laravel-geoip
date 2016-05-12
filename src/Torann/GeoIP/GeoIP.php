@@ -66,7 +66,7 @@ class GeoIP {
 		"ip" 				=> "127.0.0.0",
 		"isoCountryCode"	=> "IN",
 		"country" 			=> "India",
-		"isoStateCode"		=> "GJ"
+		"isoStateCode"		=> "GJ",
 		"city" 				=> "Ahmedabad",
 		"state" 			=> "Gujarat",
 		"postal_code"   	=> "380015",
